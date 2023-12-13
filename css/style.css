@@ -1,21 +1,43 @@
 .my-container{
     width: 750px;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
+    
+}
+
+.easy-container, .medium-container, .hard-container{    
     display: flex;
     flex-wrap: wrap;
 }
 
 .cell{
-    width: 10%;
-    height: 75px;
-    line-height: 75px;
     background-color: aquamarine;
     border: 1px solid black;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .active{
     background-color: rgb(0, 183, 255);
-    color: white;
-    
+    color: white;    
+}
+
+.easy-game{
+    width: 75px;
+    height: 75px;
+}
+
+.medium-game{
+    width: 80px;
+    height: 80px;
+}
+
+.hard-game{
+    width: 100px;
+    height: 100px;
 }
