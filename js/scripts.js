@@ -16,18 +16,15 @@ const medium = document.getElementById('medium');
 const hard = document.getElementById('hard');
 startButton.addEventListener ('click', function(){
     myContainer.innerHTML = ""
-    if (easy.selected){
-        const easyContainer = document.createElement('div')
-        easyContainer.classList.add('easy-container');
-        myContainer.append(easyContainer);
-    for (let i = 0; i < 100; i++) {
-        // const easyContainer = document.createElement('div')
-        // easyContainer.classList.add('easy-game');
-        
+    if (hard.selected){
+        const hardContainer = document.createElement('div')
+        hardContainer.classList.add('hard-container');
+        myContainer.append(hardContainer);
+    for (let i = 0; i < 100; i++) {        
         const square = document.createElement('div');
-        square.classList.add('cell', 'easy-game');
+        square.classList.add('cell', 'hard-game');
         square.innerHTML += i + 1;
-        easyContainer.append(square);
+        hardContainer.append(square);
         square.addEventListener('click', function(){
             square.classList.toggle('active');
             console.log(square.innerHTML)
@@ -49,16 +46,16 @@ startButton.addEventListener ('click', function(){
             })        
         }
     }
-    else if (hard.selected) {
-        const hardContainer = document.createElement('div')
-        hardContainer.classList.add('hard-container');
-        myContainer.append(hardContainer);
+    else if (easy.selected) {
+        const easyContainer = document.createElement('div')
+        easyContainer.classList.add('easy-container');
+        myContainer.append(easyContainer);
 
         for (let i = 0; i < 49; i++) {
             const square = document.createElement('div');
-            square.classList.add('cell', 'hard-game');
+            square.classList.add('cell', 'easy-game');
             square.innerHTML += i + 1;
-            hardContainer.append(square);
+            easyContainer.append(square);
             square.addEventListener('click', function(){
                 square.classList.toggle('active');
                 console.log(square.innerHTML)

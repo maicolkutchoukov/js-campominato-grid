@@ -24,10 +24,12 @@
 
 .active{
     background-color: rgb(0, 183, 255);
-    color: white;    
+    color: white;
+    box-shadow: inset 0px 0px 20px -5px black;
+    border-radius: 5px;    
 }
 
-.easy-game{
+.hard-game{
     width: 75px;
     height: 75px;
 }
@@ -37,7 +39,7 @@
     height: 80px;
 }
 
-.hard-game{
+.easy-game{
     width: 100px;
     height: 100px;
 }
