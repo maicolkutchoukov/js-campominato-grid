@@ -2,6 +2,7 @@
     width: 750px;
     height: 750px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -20,6 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .active{
@@ -29,17 +31,17 @@
     border-radius: 5px;    
 }
 
-.hard-game{
-    width: 75px;
-    height: 75px;
+.cell-100{
+    width: calc(750px / 10);
+    height: calc(750px / 10);
 }
 
-.medium-game{
-    width: 80px;
-    height: 80px;
+.cell-81{
+    width: calc(750px / 9);
+    height: calc(750px / 9);
 }
 
-.easy-game{
-    width: 100px;
-    height: 100px;
+.cell-49{
+    width: calc(750px / 7);
+    height: calc(750px / 7);
 }
